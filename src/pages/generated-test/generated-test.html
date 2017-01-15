@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Genereted Test</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="generated-test">
+  <p>Gerado automaticamente.</p>
+  <ion-input [(ngModel)]="data"></ion-input>
+  <p>{{data}}</p>
+  <button ion-button (click)="buscarCep()">Buscar CEP</button>
+  <button ion-button (click)="getModas()">Modas</button>
+</ion-content>

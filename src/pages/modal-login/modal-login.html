@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title>Modal-login</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="modal-login">
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Login</ion-label>
+      <ion-input type="text" [(ngModel)]="user.login"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="user.pass"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="logar()">Entrar</button>
+</ion-content>
